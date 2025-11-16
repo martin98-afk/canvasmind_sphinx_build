@@ -4,8 +4,8 @@
 
 1. 画布基础管理操作：
 
-.. image:: _images/工作流管理示意图.gif
+.. image:: ../_images/工作流管理示意图.gif
 
 2. 画布基础操作：
 
-.. image:: _images/工作流示意图.gif
+.. image:: ../_images/工作流示意图.gif
