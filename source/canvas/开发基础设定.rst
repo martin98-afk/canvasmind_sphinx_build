@@ -1,0 +1,142 @@
+==================
+开发基础设定
+==================
+
+Port Types
+----------
+
++------------------+-----------------------------+-----------------------------+
+| Type             | Description                 | Example                     |
++==================+=============================+=============================+
+| ``TEXT``         | Single-line text            | ``"hello"``                 |
++------------------+-----------------------------+-----------------------------+
+| ``LONGTEXT``     | Multi-line text             | JSON/SQL snippet            |
++------------------+-----------------------------+-----------------------------+
+| ``INT``          | Integer                     | ``42``                      |
++------------------+-----------------------------+-----------------------------+
+| ``FLOAT``        | Floating point              | ``3.14``                    |
++------------------+-----------------------------+-----------------------------+
+| ``BOOL``         | Toggle switch               | ``True/False``              |
++------------------+-----------------------------+-----------------------------+
+| ``CSV``          | Comma-separated list        | ``"a,b,c"``                 |
++------------------+-----------------------------+-----------------------------+
+| ``JSON``         | JSON object                 | ``{"key": "value"}``        |
++------------------+-----------------------------+-----------------------------+
+| ``EXCEL``        | Excel sheet data            | Sheet name + range          |
++------------------+-----------------------------+-----------------------------+
+| ``FILE``         | Local file path             | ``"data/input.csv"``        |
++------------------+-----------------------------+-----------------------------+
+| ``UPLOAD``       | User-uploaded file          | Temporary path              |
++------------------+-----------------------------+-----------------------------+
+| ``SKLEARNMODEL`` | Scikit-learn model          | ``RandomForestClassifier``  |
++------------------+-----------------------------+-----------------------------+
+| ``TORCHMODEL``   | PyTorch model               | ``nn.Module``               |
++------------------+-----------------------------+-----------------------------+
+| ``IMAGE``        | Image tensor/array          | ``np.ndarray`` (HWC)        |
++------------------+-----------------------------+-----------------------------+
+
+Property Types
+--------------
+
++------------------+-----------------------------+-----------------------------+
+| Type             | Description                 | Example                     |
++==================+=============================+=============================+
+| ``TEXT``         | Text input                  | ``"name"``                  |
++------------------+-----------------------------+-----------------------------+
+| ``LONGTEXT``     | Multi-line text             | ``"multiline\ncontent"``    |
++------------------+-----------------------------+-----------------------------+
+| ``INT``          | Integer                     | ``10``                      |
++------------------+-----------------------------+-----------------------------+
+| ``FLOAT``        | Float                       | ``0.5``                     |
++------------------+-----------------------------+-----------------------------+
+| ``BOOL``         | Boolean toggle              | ``True``                    |
++------------------+-----------------------------+-----------------------------+
+| ``CHOICE``       | Dropdown list               | ``["A", "B", "C"]``         |
++------------------+-----------------------------+-----------------------------+
+| ``DYNAMICFORM``  | Dynamic form (add/remove)   | List of key-value pairs     |
++------------------+-----------------------------+-----------------------------+
+| ``RANGE``        | Numeric range (min/max)     | ``[0, 100]``                |
++------------------+-----------------------------+-----------------------------+
+
+Canvas User Guide
+=================
+
+Basic Operations
+----------------
+
+- ✅ **Create Node**: Drag from left panel to canvas
+- ✅ **Connect Nodes**: Drag from output port → input port
+- ✅ **Run Node**: Right-click → “Run this node”
+- ✅ **View Logs**: Right-click → “View node logs”
+- ✅ **Group Nodes**: Select → Right-click → “Create Backdrop”
+
+Advanced Features
+-----------------
+
+- 🔁 **Loop Execution**: Combine ``Loop Controller`` + ``Backdrop``
+- 📁 **File Operations**: Use file picker in property panel
+- 💾 **Workflow Management**: Save/load via top-left buttons
+- 🧩 **Node Grouping**: Use Backdrop to organize logic
+- 📦 **Dependency Handling**: Auto-install on failure via ``requirements``
+
+Keyboard Shortcuts
+------------------
+
++--------------+-------------------------+
+| Shortcut     | Action                  |
++==============+=========================+
+| ``Ctrl+R``   | Run workflow            |
++--------------+-------------------------+
+| ``Ctrl+S``   | Save workflow           |
++--------------+-------------------------+
+| ``Ctrl+O``   | Load workflow           |
++--------------+-------------------------+
+| ``Ctrl+A``   | Select all nodes        |
++--------------+-------------------------+
+| ``Del``      | Delete selected nodes   |
++--------------+-------------------------+
+
+Node Status Colors
+------------------
+
++---------+--------------+
+| State   | Border Color |
++=========+==============+
+| Idle    | Gray         |
++---------+--------------+
+| Running | Blue         |
++---------+--------------+
+| Success | Green        |
++---------+--------------+
+| Failed  | Red          |
++---------+--------------+
+
+Connection Status Colors
+------------------------
+
++-----------------+------------+
+| State           | Line Color |
++=================+============+
+| Idle            | Yellow     |
++-----------------+------------+
+| Input Running   | Blue       |
++-----------------+------------+
+| Output Running  | Green      |
++-----------------+------------+
+
+Logging System
+--------------
+
+- Uses `Loguru`_ for structured, colored logging
+- Each node has its own log buffer
+- ``self.logger.info("...")`` captures output
+- ``print()`` output is automatically captured
+- Logs saved per-node and visible in UI
+
+Data Flow Rules
+---------------
+
+- Inputs auto-populate from upstream outputs
+- Outputs stored by port name (dict key)
+- Supports multiple inputs/outputs
+- No circular dependency allowed
