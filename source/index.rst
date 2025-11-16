@@ -51,20 +51,9 @@ or alternatively you can download the source `here <https://github.com/martin98-
     :maxdepth: 2
     :titlesonly:
 
+    index
     menu
     introduction
-
-.. toctree::
-    :hidden:
-    :caption: 特殊节点介绍
-    :name: nodes
-    :maxdepth: 2
-
-    nodes/分支节点
-    nodes/迭代节点
-    nodes/循环节点
-    nodes/自定义代码节点
-    nodes/工具调用节点
 
 .. toctree::
     :hidden:
@@ -79,7 +68,21 @@ or alternatively you can download the source `here <https://github.com/martin98-
     canvas/属性面板
     canvas/画布UI功能
     canvas/画布执行模式
+    canvas/画布节点智能推荐
+    canvas/组件调试模式
     canvas/画布项目导出
+
+.. toctree::
+    :hidden:
+    :caption: 特殊节点介绍
+    :name: nodes
+    :maxdepth: 2
+
+    nodes/分支节点
+    nodes/迭代节点
+    nodes/循环节点
+    nodes/自定义代码节点
+    nodes/工具调用节点
 
 .. toctree::
     :hidden:
