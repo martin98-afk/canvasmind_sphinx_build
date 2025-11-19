@@ -1,7 +1,7 @@
 CanvasMind |version_str|
 #########################
 
-CanvasMind a Visual Programming Workflow Development Tool written in python that can be implemented.
+CanvasMind 是一款基于 Python 开发的可视化编程工作流开发工具，支持灵活部署与扩展。
 
 .. image:: _images/子连通图执行顺序定义示意图.png
 
@@ -36,13 +36,12 @@ Package with PyInstaller
     pyinstaller --onedir --add-data "app;app" --add-data "icons;icons" --add-data "envs/Miniconda3-py311_23.11.0-2-Windows-x86_64.exe;envs" --add-data
  ".venv/Lib/site-packages/spyder;spyder" --add-data "resource;resource" --add-data "examples;examples" --copy-metadata jupyter_client --hidden-import jupyter_client.provisioning.local --hidden-import ipykernel -i icons/logo3.png main.py
 
-or alternatively you can download the source `here <https://github.com/martin98-afk/CanvasMind/releases/download/v.0.1.7/CanvasMind.zip>`_.
-
+> 💡 您也可以直接下载预打包的发行版：[点击此处获取 CanvasMind v0.1.7 完整压缩包](https://github.com/martin98-afk/CanvasMind/releases/download/v.0.1.7/CanvasMind.zip)
 
 ----
 
-| Source: https://github.com/martin98-afk/CanvasMind
-| Issues: https://github.com/martin98-afk/CanvasMind/issues
+| 源码仓库：https://github.com/martin98-afk/CanvasMind
+| 问题反馈：https://github.com/martin98-afk/CanvasMind/issues
 
 .. toctree::
     :hidden:
@@ -52,8 +51,7 @@ or alternatively you can download the source `here <https://github.com/martin98-
     :titlesonly:
 
     index
-    menu
-    introduction
+    整体介绍
 
 .. toctree::
     :hidden:
