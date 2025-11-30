@@ -93,6 +93,7 @@ Package with PyInstaller
     component/组件树使用
     component/组件调试
     component/组件版本管理
+    component/组件开发大模型助手
 
 .. toctree::
     :hidden:
