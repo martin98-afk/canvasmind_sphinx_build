@@ -11,6 +11,12 @@ CanvasMind 是一款基于 Python 开发的可视化编程工作流开发工具�
 
 ----
 
+.. image:: _images/可视化训练效果.png
+   :alt: 可视化训练画布
+   :align: center
+
+----
+
 **资源链接**
 ^^^^^^^^^^^
 
