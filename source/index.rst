@@ -51,10 +51,9 @@ Package with PyInstaller
 
 .. code-block:: bash
 
-    pyinstaller --onedir --add-data "app;app" --add-data "icons;icons" --add-data "envs/Miniconda3-py311_23.11.0-2-Windows-x86_64.exe;envs" --add-data
- ".venv/Lib/site-packages/spyder;spyder" --add-data "resource;resource" --add-data "examples;examples" --copy-metadata jupyter_client --hidden-import jupyter_client.provisioning.local --hidden-import ipykernel -i icons/logo3.png main.py
+    python main.py
 
-> 💡 您也可以直接下载预打包的发行版：[点击此处获取 CanvasMind v0.1.7 完整压缩包](https://github.com/martin98-afk/CanvasMind/releases/download/v.0.1.7/CanvasMind.zip)
+> 💡 您也可以直接下载预打包的发行版：[点击此处获取 CanvasMind v0.4.3 完整压缩包](https://github.com/martin98-afk/CanvasMind/releases/download/v0.4.3/CanvasMind_installer.exe)
 
 
 

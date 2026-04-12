@@ -7,9 +7,9 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'CanvasMind'
-copyright = '2025, DingMaMa'
-author = 'DingMaMa'
-release = '0.2.0'
+copyright = '2025~2026, Martin98-afk'
+author = 'Martin98-afk'
+release = '0.4.0'
 
 # -*- coding: utf-8 -*-
 #
