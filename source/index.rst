@@ -3,7 +3,7 @@ CanvasMind |version_str|
 
 CanvasMind 是一款基于 Python 开发的可视化编程工作流开发工具。在传统数据流画布的基础上，CanvasMind 创新性地融合了 **全局变量系统** 、 **控制流执行机制** 、 **节点智能推荐引擎** ，以及 **大模型驱动的画布智能分析能力** ，实现从数据处理、逻辑编排到 AI 辅助推理的一体化低代码开发体验。
 
-通过高度可定制的节点体系、流畅的交互界面与强大的后端执行支持（如 IPython 内核），CanvasMind 旨在为算法工程师、数据科学家和 AI 应用开发者提供一个 **高效、直观且可扩展** 的可视化编程环境。
+通过高度可定制的节点体系、流畅的交互界面与强大的后端执行支持（如 IPython 内核、远程 SSH 执行），CanvasMind 旨在为算法工程师、数据科学家和 AI 应用开发者提供一个 **高效、直观且可扩展** 的可视化编程环境。
 
 .. image:: _images/项目标志卡片.png
    :alt: CanvasMind 项目标志卡片
@@ -22,38 +22,39 @@ CanvasMind 是一款基于 Python 开发的可视化编程工作流开发工具�
 
 - 源码仓库：https://github.com/martin98-afk/CanvasMind  
 - 问题反馈：https://github.com/martin98-afk/CanvasMind/issues  
+- 官方文档：https://canvasmind-sphinx-build.readthedocs.io/zh-cn/latest/
 
-Install
+🚀 快速开始
 ^^^^^^^^^^^
 
-Requirements
+环境要求
 ------------
 
 - Python 3.8+
-- PyQt5 or PySide2
+- PyQt5 或 PySide2
 
-Install Dependencies
+安装依赖
 --------------------
 
 .. code-block:: bash
 
     pip install -r requirements.txt
 
-Run the Application
+运行应用
 -------------------
 
 .. code-block:: bash
 
     python main.py
 
-Package with PyInstaller
+PyInstaller 打包
 ------------------------
 
 .. code-block:: bash
 
-    python main.py
+    python build.py
 
-> 💡 您也可以直接下载预打包的发行版：[点击此处获取 CanvasMind v0.4.3 完整压缩包](https://github.com/martin98-afk/CanvasMind/releases/download/v0.4.3/CanvasMind_installer.exe)
+💡 您也可以直接下载预打包的发行版：`点击此处获取 CanvasMind v0.4.3 完整压缩包 <https://github.com/martin98-afk/CanvasMind/releases/download/v0.4.3/CanvasMind_installer.exe>`_
 
 
 
@@ -66,6 +67,17 @@ Package with PyInstaller
 
     index
     整体介绍
+
+.. toctree::
+    :hidden:
+    :caption: 核心引擎
+    :name: engine
+    :maxdepth: 2
+    :titlesonly:
+
+    execution_engine
+    control_flow
+    ui_design
 
 .. toctree::
     :hidden:
