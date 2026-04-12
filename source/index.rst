@@ -81,6 +81,15 @@ PyInstaller 打包
 
 .. toctree::
     :hidden:
+    :caption: 大模型集成
+    :name: llm
+    :maxdepth: 2
+    :titlesonly:
+
+    大模型集成
+
+.. toctree::
+    :hidden:
     :caption: 画布开发
     :name: canvas
     :maxdepth: 2
@@ -142,7 +151,7 @@ PyInstaller 打包
 
 .. toctree::
     :hidden:
-    :caption: Examples
+    :caption: 示例
     :name: examples
     :maxdepth: 1
 

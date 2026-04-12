@@ -1,5 +1,5 @@
 ==========
-UI Design
+界面设计
 ==========
 
 🎨 Modern Fluent UI powered by `qfluentwidgets`.
