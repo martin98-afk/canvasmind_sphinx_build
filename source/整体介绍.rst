@@ -32,7 +32,7 @@
 - ✅ 插件化触发系统（Cron / Webhook / 文件监听）
 - ✅ 画布工具调用（Function Calling 支持）
 
-.. image:: _images/欢迎界面示意图.png
+.. image:: _images/项目标志卡片.png
    :width: 800px
    :align: center
    :alt: 欢迎界面示意图

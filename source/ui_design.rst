@@ -23,12 +23,12 @@ CanvasMind 支持画布水平或垂直方向的无限拆分，便于在大规模
 - **场景状态实时同步**：所有视口共享同一个实时场景，编辑节点即时反映在所有视图
 - **跨区域节点追踪**：在一个视口锁定查看"源头节点"参数，同时在另一视口实时观察"末端输出"表现
 
-.. image:: _images/复杂组件控件示意图.png
+.. image:: _images/复杂组件控件示意图1.png
    :width: 800px
    :align: center
-   :alt: UI Components
+   :alt: 节点UI设计
 
 .. image:: _images/视角拆分.png
    :width: 800px
    :align: center
-   :alt: Multi-View Splitting
+   :alt: 多视角拆分
